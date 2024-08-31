@@ -1,0 +1,150 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(153,153,226);
+            font-size: 1.04rem;
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            font-size: 3rem;
+
+        }
+        .rightsection img{
+            width: 80%;
+        
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+       .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #0ef;
+        text-decoration: none;
+        margin: 30px 15px 30px 0;
+        }
+       .home-sci a :hover{
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0ef;
+
+
+       }
+
+           
+            
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="Right"></div>
+            <ul>
+               <li><a href="/"><a>Home</a></li>
+               <li><a href=""><a>About</a></li>
+               <li><a href=""><a>Porjects</a></li>
+               <li><a href=""><a>Contact Me</a></li>
+        </nav>
+     </header>
+    
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is  <span class="purple">Ayusha Sarvaiye</span>
+                <div> and I am a Passionate</div>
+                <span id="element"></span>
+             </div>
+         <div class="rightsection"><img src="developer.png" alt="">
+            <div>
+                <div class="home-sci">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a> 
+            </div>
+        </div>
+            
+            
+        </section>
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Frontend Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+    
+</body>
+</html>
